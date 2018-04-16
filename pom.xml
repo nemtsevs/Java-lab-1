@@ -6,7 +6,10 @@
 
     <groupId>Lab1</groupId>
     <artifactId>Lab1</artifactId>
+<<<<<<< HEAD
     <version>1.0-SNAPSHOT</version>
+=======
+>>>>>>> ad2c8f3b611c40894360ac14ec5d51946a8fc9dc
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
