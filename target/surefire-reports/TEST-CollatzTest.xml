@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="CollatzTest" time="6.328" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="CollatzTest" time="5.891" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_161\bin"/>
@@ -66,13 +66,13 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="CollatzTest" name="collatz_10" time="0"/>
-  <testcase classname="CollatzTest" name="collatz1tol_837798" time="1.468"/>
-  <testcase classname="CollatzTest" name="collatz1tol_837799" time="1.407"/>
+  <testcase classname="CollatzTest" name="collatz1tol_837798" time="1.437"/>
+  <testcase classname="CollatzTest" name="collatz1tol_837799" time="1.391"/>
   <testcase classname="CollatzTest" name="collatz_100" time="0"/>
   <testcase classname="CollatzTest" name="collatz1tol_100" time="0"/>
   <testcase classname="CollatzTest" name="collatz1tol_10" time="0"/>
-  <testcase classname="CollatzTest" name="collatz_1_1000000" time="1.734"/>
+  <testcase classname="CollatzTest" name="collatz_1_1000000" time="1.36"/>
   <testcase classname="CollatzTest" name="collatz1tol_1" time="0"/>
-  <testcase classname="CollatzTest" name="collatz1tol_1000000" time="1.719"/>
+  <testcase classname="CollatzTest" name="collatz1tol_1000000" time="1.703"/>
   <testcase classname="CollatzTest" name="collatz_1" time="0"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="DeployRangeDemoTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="11" failures="0" name="DeployRangeDemoTest" time="0.015" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_161\bin"/>
@@ -68,12 +68,12 @@
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_10" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_1" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_2" time="0"/>
-  <testcase classname="DeployRangeDemoTest" name="printDeployRange_3" time="0.016"/>
+  <testcase classname="DeployRangeDemoTest" name="printDeployRange_3" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_4" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_5" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_6" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_7" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_8" time="0"/>
   <testcase classname="DeployRangeDemoTest" name="printDeployRange_9" time="0"/>
-  <testcase classname="DeployRangeDemoTest" name="main" time="0"/>
+  <testcase classname="DeployRangeDemoTest" name="main" time="0.015"/>
 </testsuite>

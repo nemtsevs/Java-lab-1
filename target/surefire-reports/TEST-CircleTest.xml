@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="45" failures="0" name="CircleTest" time="0.015" errors="0" skipped="0">
+<testsuite tests="45" failures="0" name="CircleTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_161\bin"/>
@@ -78,7 +78,7 @@
   <testcase classname="CircleTest" name="Circle_FERENCE__1_getParam_AREA" time="0"/>
   <testcase classname="CircleTest" name="setParam_RADIUS_1_getParam_AREA" time="0"/>
   <testcase classname="CircleTest" name="Circle_AREA__1_getParam_FERENCE" time="0"/>
-  <testcase classname="CircleTest" name="setParam_AREA_314159_getParam_RADIUS" time="0.015"/>
+  <testcase classname="CircleTest" name="setParam_AREA_314159_getParam_RADIUS" time="0"/>
   <testcase classname="CircleTest" name="Circle_FERENCE_628318_getParam_FERENCE" time="0"/>
   <testcase classname="CircleTest" name="setParam_FERENCE__10_getParam_RADIUS" time="0"/>
   <testcase classname="CircleTest" name="setParam_AREA_314159_getParam_AREA" time="0"/>
