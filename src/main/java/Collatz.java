@@ -13,4 +13,8 @@ public class Collatz
         }
         return qmax;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2

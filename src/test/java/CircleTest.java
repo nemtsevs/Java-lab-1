@@ -256,4 +256,8 @@ public class CircleTest
         Circle circTest = new Circle(Circle.ParamName.AREA, -1);
         assertEquals(0, circTest.getParam(Circle.ParamName.AREA),0);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2
