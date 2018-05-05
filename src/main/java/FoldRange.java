@@ -11,10 +11,6 @@ public class FoldRange
             if (cur != k) System.out.print("-" + arr[k]);
             if (k != arr.length - 1) System.out.print(",");
         }
-<<<<<<< HEAD
         System.out.print(".");
-=======
-        System.out.println();
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2
     }
 }

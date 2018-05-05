@@ -25,8 +25,4 @@ public class Sqrt
     public double calc() {
         return iter(1.0, arg);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2

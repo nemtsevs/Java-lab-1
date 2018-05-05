@@ -56,8 +56,4 @@ public class CollatzTest
     public void collatz1tol_1000000() {
         assertEquals(525, Collatz.collatz1tol(1000000));
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2

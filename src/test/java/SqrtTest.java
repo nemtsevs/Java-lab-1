@@ -113,8 +113,4 @@ public class SqrtTest
         Sqrt sqrtTest = new Sqrt(0,6);
         assertEquals(0.000001, sqrtTest.delta,0);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2

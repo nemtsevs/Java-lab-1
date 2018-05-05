@@ -18,12 +18,6 @@ public class DeployRange
                 j = cur + count + 1;
             }
         }
-<<<<<<< HEAD
         System.out.print(".");
     }
 }
-=======
-        System.out.println();
-    }
-}
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2

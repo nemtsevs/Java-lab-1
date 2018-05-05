@@ -24,27 +24,18 @@ public class SqrtDemoTest
     @Test
     public void printSqrt_2_15() {
         SqrtDemo.printSqrt(2,15);
-<<<<<<< HEAD
         assertEquals("Sqrt of 2.0 (delta = 1.0E-15) = 1,414213562373095.", outStream.toString());
-=======
-        assertEquals("Sqrt of 2.0 (delta = 1.0E-15) = 1.414213562373095\r\n", outStream.toString());
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2
     }
 
     @Test
     public void printSqrt_3_14() {
         SqrtDemo.printSqrt(3,14);
-<<<<<<< HEAD
         assertEquals("Sqrt of 3.0 (delta = 1.0E-14) = 1,73205080756888.", outStream.toString());
-=======
-        assertEquals("Sqrt of 3.0 (delta = 1.0E-14) = 1.7320508075688772\r\n", outStream.toString());
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2
     }
 
     @Test
     public void printSqrt_5_13() {
         SqrtDemo.printSqrt(5,13);
-<<<<<<< HEAD
         assertEquals("Sqrt of 5.0 (delta = 1.0E-13) = 2,2360679774998.", outStream.toString());
     }
 
@@ -54,14 +45,3 @@ public class SqrtDemoTest
         assertEquals("Sqrt of 7.0 (delta = 1.0E-15) = 2,645751311064591.", outStream.toString());
     }
 }
-=======
-        assertEquals("Sqrt of 5.0 (delta = 1.0E-13) = 2.23606797749979\r\n", outStream.toString());
-    }
-
-    @Test
-    public void main() {
-        SqrtDemo.main(new String[]{""});
-        assertEquals("Sqrt of 7.0 (delta = 1.0E-15) = 2.6457513110645907\r\n", outStream.toString());
-    }
-}
->>>>>>> 94ee4c9406c74bd8380a034cc6cdc5f24aaa57a2
