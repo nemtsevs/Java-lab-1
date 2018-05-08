@@ -1,47 +1,54 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 import static org.junit.Assert.*;
 
 public class SqrtDemoTest
 {
-    private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-
-    @Before
-    public void setup() {
-        System.setOut(new PrintStream(outStream));
+    @org.junit.Test
+    public void sqrtMath_2_15() {
+        assertEquals(Math.sqrt(2), SqrtDemo.sqrtMath(2, 15), Math.pow(10,-15));
     }
 
-    @After
-    public void clean() {
-        System.setOut(null);
+    @org.junit.Test
+    public void sqrtDelMath_3_14_() {
+        double results[] = SqrtDemo.sqrtDelMath(3, 14);
+        double result = results[0];
+        double delta = results[1];
+        assertEquals(Math.sqrt(3), result, delta);
     }
 
-    @Test
-    public void printSqrt_2_15() {
-        SqrtDemo.printSqrt(2,15);
-        assertEquals("Sqrt of 2.0 (delta = 1.0E-15) = 1.414213562373095.", outStream.toString());
+    @org.junit.Test
+    public void sqrtDelMath_3_14() {
+        double results[] = SqrtDemo.sqrtDelMath(3, 14);
+        assertEquals(Math.sqrt(3), results[0], results[1]);
     }
 
-    @Test
-    public void printSqrt_3_14() {
-        SqrtDemo.printSqrt(3,14);
-        assertEquals("Sqrt of 3.0 (delta = 1.0E-14) = 1.73205080756888.", outStream.toString());
+    @org.junit.Test
+    public void sqrtDelMath_5_13() {
+        double results[] = SqrtDemo.sqrtDelMath(5, 13);
+        assertEquals(Math.sqrt(5), results[0], results[1]);
     }
 
-    @Test
-    public void printSqrt_5_13() {
-        SqrtDemo.printSqrt(5,13);
-        assertEquals("Sqrt of 5.0 (delta = 1.0E-13) = 2.2360679774998.", outStream.toString());
+    @org.junit.Test
+    public void sqrtDelArgMath_7_15() {
+        double results[] = SqrtDemo.sqrtDelArgMath(7, 15);
+        double result = results[0];
+        double delta = results[1];
+        double number = results[2];
+        assertEquals(Math.sqrt(number), result, delta);
     }
 
-    @Test
-    public void printSqrt_7_15() {
-        SqrtDemo.printSqrt(7,15);
-        assertEquals("Sqrt of 7.0 (delta = 1.0E-15) = 2.645751311064591.", outStream.toString());
+    @org.junit.Test
+    public void sqrtDelArgMath_11_11() {
+        double results[] = SqrtDemo.sqrtDelArgMath(11, 11);
+        assertEquals(Math.sqrt(results[2]), results[0], results[1]);
+    }
+
+    @org.junit.Test
+    public void sqrtRes2_3() {
+        assertEquals(Math.sqrt(2), SqrtDemo.sqrtRes2_3(), Math.pow(10,-3));
+    }
+
+    @org.junit.Test
+    public void sqrtRes7_15() {
+        assertEquals(Math.sqrt(7), SqrtDemo.sqrtRes7_15(), Math.pow(10,-15));
     }
 }

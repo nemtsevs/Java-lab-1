@@ -1,82 +1,55 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 import static org.junit.Assert.*;
 
 public class CollatzDemoTest
 {
-    private final ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-
-    @Before
-    public void setup() {
-        System.setOut(new PrintStream(outStream));
+    @org.junit.Test
+    public void collatz1to1Math() {
+        assertEquals(4, CollatzDemo.collatz1tolMath(1));
     }
 
-    @After
-    public void clean() {
-        System.setOut(null);
+    @org.junit.Test
+    public void collatz1to2Math() {
+        assertEquals(4, CollatzDemo.collatz1tolMath(2));
     }
 
-    @Test
-    public void printQmax1tol_1() {
-        CollatzDemo.printQmax1tol(1);
-        assertEquals("Collatz Qmax 1 to 1 = 4. ", outStream.toString());
-    }
-    @Test
-    public void printQmax1tol_2() {
-        CollatzDemo.printQmax1tol(2);
-        assertEquals("Collatz Qmax 1 to 2 = 4. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to3Math() {
+        assertEquals(8, CollatzDemo.collatz1tolMath(3));
     }
 
-    @Test
-    public void printQmax1tol_3() {
-        CollatzDemo.printQmax1tol(3);
-        assertEquals("Collatz Qmax 1 to 3 = 8. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to4Math() {
+        assertEquals(8, CollatzDemo.collatz1tolMath(4));
     }
 
-    @Test
-    public void printQmax1tol_4() {
-        CollatzDemo.printQmax1tol(4);
-        assertEquals("Collatz Qmax 1 to 4 = 8. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to5Math() {
+        assertEquals(8, CollatzDemo.collatz1tolMath(5));
     }
 
-    @ Test
-    public void printQmax1tol_5() {
-        CollatzDemo.printQmax1tol(5);
-        assertEquals("Collatz Qmax 1 to 5 = 8. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to10Math() {
+        assertEquals(20, CollatzDemo.collatz1tolMath(10));
     }
 
-    @Test
-    public void printQmax1tol_10() {
-        CollatzDemo.printQmax1tol(10);
-        assertEquals("Collatz Qmax 1 to 10 = 20. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to100Math() {
+        assertEquals(119, CollatzDemo.collatz1tolMath(100));
     }
 
-    @Test
-    public void printQmax1tol_100() {
-        CollatzDemo.printQmax1tol(100);
-        assertEquals("Collatz Qmax 1 to 100 = 119. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to837799Math() {
+        assertEquals(525, CollatzDemo.collatz1tolMath(837799));
     }
 
-    @Test
-    public void printQmax1tol_837799() {
-        CollatzDemo.printQmax1tol(837799);
-        assertEquals("Collatz Qmax 1 to 837799 = 525. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to12345Math() {
+        int resArr[] = {4,4,8,8,8};
+        for(int i=1; i <= 5; i++) assertEquals(resArr[i-1], CollatzDemo.collatz1tolMath(i));
     }
 
-    @Test
-    public void printQmax1tol_1_5() {
-        for(int i=1; i <= 5; i++) CollatzDemo.printQmax1tol(i);
-        assertEquals("Collatz Qmax 1 to 1 = 4. Collatz Qmax 1 to 2 = 4. Collatz Qmax 1 to 3 = 8. Collatz Qmax 1 to 4 = 8. Collatz Qmax 1 to 5 = 8. ", outStream.toString());
-    }
-
-    @Test
-    public void printQmax1tol_1000000() {
-        CollatzDemo.printQmax1tol(1000000);
-        assertEquals("Collatz Qmax 1 to 1000000 = 525. ", outStream.toString());
+    @org.junit.Test
+    public void collatz1to1000000Res() {
+        assertEquals(525, CollatzDemo.collatz1to1000000Res());
     }
 }
